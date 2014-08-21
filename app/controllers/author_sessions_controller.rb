@@ -1,7 +1,6 @@
 class AuthorSessionsController < ApplicationController
 
   def new
-    
   end
 
   def create
@@ -10,6 +9,7 @@ class AuthorSessionsController < ApplicationController
     else
       flash.now.alert = "Login failed."
       render action: :new
+    end
   end
 
   def destroy
